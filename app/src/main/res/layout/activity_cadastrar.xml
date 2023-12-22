@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CadastrarActivity">
+
+    <EditText
+        android:id="@+id/idUsuarioCadastrar"
+        android:layout_width="370dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="128dp"
+        android:background="@color/white"
+        android:backgroundTint="#FAF6F6"
+        android:ems="10"
+        android:hint=" usuario"
+        android:textColor="@color/black"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idSenhaCadstrar"
+        android:layout_width="370dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:backgroundTint="#FAF6F6"
+        android:ems="10"
+        android:hint=" senha"
+        android:textColor="@color/black"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/idEmailCadastrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idEmailCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/idEmailCadastrar" />
+
+    <Button
+        android:id="@+id/btnCadastrarUsuario"
+        android:layout_width="126dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="256dp"
+        android:backgroundTint="#d9d9d9"
+        android:onClick="cadastrarForm"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSenhaCadstrar"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <EditText
+        android:id="@+id/idEmailCadastrar"
+        android:layout_width="370dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:backgroundTint="#FAF6F6"
+        android:ems="10"
+        android:hint=" email"
+        android:textColor="@color/black"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/idUsuarioCadastrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idUsuarioCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/idUsuarioCadastrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
